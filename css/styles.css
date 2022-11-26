@@ -42,9 +42,10 @@ td {
   border-bottom: 1px solid #66d1c7;
 }
 
-.rows {
+tr:not(.tr-title) {
   transition: background-color 0.5s;
 }
-.rows:hover {
+
+tr:not(.tr-title):hover {
   background-color: #66d1c7;
 }
