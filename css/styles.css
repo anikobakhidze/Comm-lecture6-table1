@@ -1,48 +1,50 @@
 body {
   height: 100vh;
-  background: linear-gradient(170deg, rgba(248, 52, 92, 1) 13%, rgba(144, 53, 148, 1) 58%);
+  background: linear-gradient(
+    170deg,
+    rgba(248, 52, 92, 1) 13%,
+    rgba(144, 53, 148, 1) 58%
+  );
   background-repeat: no-repeat;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .container {
-
   width: 600px;
   height: 380px;
   margin: 70px auto;
-  padding-top: 40px;
-  background: linear-gradient(170deg, rgba(37, 193, 143, 1) 13%, rgba(37, 187, 176, 1) 58%);
+  padding-top: 20px;
+  background: linear-gradient(
+    170deg,
+    rgba(37, 193, 143, 1) 13%,
+    rgba(37, 187, 176, 1) 58%
+  );
   color: #d9fffe;
-
 }
 
 .table-title {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
-
 }
 
 table {
   width: 100%;
   text-align: left;
   font-size: 10px;
-
 }
 
-th,
+th:not(.table-title),
 td {
   padding: 15px 0px 15px 50px;
   border-top: 1px solid #66d1c7;
   border-bottom: 1px solid #66d1c7;
 }
 
-tr {
+.rows {
   transition: background-color 0.5s;
 }
-
-tr:hover {
+.rows:hover {
   background-color: #66d1c7;
 }
